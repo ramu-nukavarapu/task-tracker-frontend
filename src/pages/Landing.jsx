@@ -26,8 +26,26 @@ export default function Landing() {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" sx={{ flexGrow: 1 }}>Task Tracker</Typography>
-          <Button color="inherit" component={Link} to="/login">Login</Button>
-          <Button color="inherit" component={Link} to="/signup">Sign Up</Button>
+          <Box sx={{display: "flex", gap: 2}}>
+            <Button variant="outlined" color="inherit" sx={{
+              color: 'white',
+              borderColor: 'white',
+              '&:hover': {
+                color: 'white',
+                borderColor: 'white',
+                backgroundColor: 'primary',
+              },
+            }} component={Link} to="/login">Login</Button>
+            <Button variant="outlined" color="inherit" sx={{
+              color: 'white',
+              borderColor: 'white',
+              '&:hover': {
+                color: 'white',
+                borderColor: 'white',
+                backgroundColor: 'primary',
+              },
+            }} component={Link} to="/signup">Sign Up</Button>
+          </Box>
         </Toolbar>
       </AppBar>
 
