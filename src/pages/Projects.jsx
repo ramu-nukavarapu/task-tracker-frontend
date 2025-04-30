@@ -23,7 +23,7 @@ const Projects = () => {
   const { user } = useAuth();
   const navigate = useNavigate();
   const { id } = useParams();
-  const BASE_URL = 'http://localhost:3000';
+  const BASE_URL = import.meta.env.VITE_BASE_URL;
   useEffect(() => {
     if (id) {
       fetchProject();

@@ -18,7 +18,7 @@ import { useAuth } from '../context/AuthContext';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
-const BASE_URL = 'http://localhost:3000';
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 const Dashboard = () => {
   const [projects, setProjects] = useState([]);
   const { user, logout } = useAuth();
